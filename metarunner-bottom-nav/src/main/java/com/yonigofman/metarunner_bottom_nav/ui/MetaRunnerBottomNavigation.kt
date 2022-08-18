@@ -50,10 +50,9 @@ fun MetaRunnerBottomNavigation(
         items.forEach{
 
             val isSelected = it.route==selectedRoute
-            val color = if(isSelected) itemColor else itemSelectedColor
+            val color = if(isSelected) itemSelectedColor else itemColor
             
             IconButton(onClick = {
-
                 if(!isSelected)
                     onItemSelected(it)
 
